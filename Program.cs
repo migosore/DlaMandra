@@ -59,9 +59,9 @@ namespace C_Sharp_First_Project
 
         public void ShowPosition(Point p)
         {
-            Console.Write(p._x);
-            Console.Write(" tumabyć tab  ");
-            Console.WriteLine(p._y);
+           Console.Write(Math.Round(p._x, 2));
+            Console.Write("\t");
+            Console.WriteLine(Math.Round(p._y, 2));
         }
        
         public override string ToString()
@@ -83,13 +83,14 @@ namespace C_Sharp_First_Project
             Point p1 = new Point(132.4, 34.2);
             Console.WriteLine("p1:{0}", p1);
             Point velocityofPoint = new Point(22, -7);
-            Point accelerationofPoint = new Point(-1, 0.4);
+            Point accelerationofPoint = new Point(-0.1, 0.4);
 
             int i = 0;
-            while (i < 300)
+            while (i < 200)
             {
                 velocityofPoint.Add(accelerationofPoint);
                 p1.Add(velocityofPoint);
+                
                 p1.ShowPosition(p1);
                 i++;
               }
