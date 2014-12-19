@@ -80,10 +80,10 @@ namespace C_Sharp_First_Project
 
         private static void Main(string[] args)
         {
-            Point p1 = new Point(132.4, 34.2);
+            Point p1 = new Point(100, 100);
             Console.WriteLine("p1:{0}", p1);
-            Point velocityofPoint = new Point(22, -7);
-            Point accelerationofPoint = new Point(-0.1, 0.4);
+            Point velocityofPoint = new Point(20, 5);
+            Point accelerationofPoint = new Point(-0.5, -0.1);
 
             int i = 0;
             while (i < 200)
